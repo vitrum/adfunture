@@ -9,3 +9,5 @@ Version: 1.0.0
 */
 
 .span2 { margin: 0px;}
+.carousel { float: left; overflow: hidden; margin: 20px; }
+.carousel , .item img { width:300px; height:200px;}

@@ -12,10 +12,10 @@
 
   <script src="<?php echo get_template_directory_uri(); ?>/js/vendor/modernizr-2.5.3.min.js"></script>
 
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+
   <script>window.jQuery || document.write('<script src="<?php echo get_template_directory_uri(); ?>/js/vendor/jquery-1.7.2.min.js"><\/script>')</script>
 
-
+  <script src="<?php echo get_template_directory_uri(); ?>/js/inc.js"></script>
   <?php roots_head(); ?>
   <?php wp_head(); ?>
 
@@ -30,14 +30,17 @@
 
   <?php roots_header_before(); ?>
   <?php
-    if (current_theme_supports('bootstrap-top-navbar')) {
+    /*if (current_theme_supports('bootstrap-top-navbar')) {
       get_template_part('templates/header', 'top-navbar');
     } else {
       get_template_part('templates/header', 'default');
-    }
+    }*/
   ?>
-  <?php include (TEMPLATEPATH . '/sidebar2.php'); ?>
   <?php roots_header_after(); ?>
+
+  <section class="bannerandlogobox">
+    <?php include (TEMPLATEPATH . '/sidebar2.php'); ?>
+  </section>
 
   <?php roots_wrap_before(); ?>
   <div id="wrap" class="<?php echo WRAP_CLASSES; ?>" role="document">
