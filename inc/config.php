@@ -7,12 +7,12 @@ add_theme_support('bootstrap-responsive');
 add_theme_support('bootstrap-top-navbar');
 
 // Set the content width based on the theme's design and stylesheet
-if (!isset($content_width)) { $content_width = 940; }
+if (!isset($content_width)) { $content_width = 950; }
 
 define('POST_EXCERPT_LENGTH',       40);
 define('WRAP_CLASSES',              'container');
 define('CONTAINER_CLASSES',         'row');
-define('MAIN_CLASSES',              'span8');
+define('MAIN_CLASSES',              'span6');
 define('SIDEBAR_CLASSES',           'span4');
 define('FULLWIDTH_CLASSES',         'span12');
 define('GOOGLE_ANALYTICS_ID',       '');

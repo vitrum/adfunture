@@ -38,7 +38,7 @@
   ?>
   <?php roots_header_after(); ?>
 
-  <section class="bannerandlogobox">
+  <section class="bannerandlogobox <?php echo WRAP_CLASSES; ?>">
     <?php include (TEMPLATEPATH . '/sidebar2.php'); ?>
   </section>
 

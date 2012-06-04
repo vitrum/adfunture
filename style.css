@@ -7,7 +7,13 @@ Author URI: http://vitrum5.wordpress.com
 Author E-mail: vitrum.cn@gmail.com;
 Version: 1.0.0
 */
+[class*="span"] { margin: 0px;}
 
-.span2 { margin: 0px;}
+body.top-navbar { padding: 0;}
+
+.row { margin: 0;}
+
+.container {width:950px;}
+
 .carousel { float: left; overflow: hidden; margin: 20px; }
 .carousel , .item img { width:300px; height:200px;}
