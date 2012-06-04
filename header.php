@@ -38,9 +38,9 @@
   ?>
   <?php roots_header_after(); ?>
 
-  <section class="bannerandlogobox <?php echo WRAP_CLASSES; ?>">
+  <section id="tophead" class="<?php echo WRAP_CLASSES; ?> bannerandlogobox">
     <?php include (TEMPLATEPATH . '/sidebar2.php'); ?>
   </section>
 
   <?php roots_wrap_before(); ?>
-  <div id="wrap" class="<?php echo WRAP_CLASSES; ?>" role="document">
+  <div id="wrap" class="<?php echo WRAP_CLASSES; ?> row-fluid" role="document">

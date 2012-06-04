@@ -1,13 +1,13 @@
-<header id="banner" class="navbar navbar-fixed-top" role="banner">
+<header id="topbrandbanner" class="navbar gzwall" role="banner">
 	<?php roots_header_inside(); ?>
-	<div class="header span12">
+	<div class="topheader ">
 		<?php roots_header_inside(); ?>
 	  <?php dynamic_sidebar('Header Top Sidebar'); ?>
 	</div>
 </header>
-<div class="span12">
+<div class=" topsliderbanner gzwall">
   <?php dynamic_sidebar('Header banner Sidebar'); ?>
 </div>
-<div class="span12">
+<div class=" toplogobanner gzwall">
   <?php dynamic_sidebar('Header logo Sidebar'); ?>
 </div>
