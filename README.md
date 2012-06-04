@@ -5,7 +5,7 @@ adfunture wordpress theme
 
 
 
-<div id="myCarousel" class="carousel slide">
+  <div id="myCarousel" class="carousel slide">
             <div class="carousel-inner">
               <div class="item active">
                 <img src="http://twitter.github.com/bootstrap/assets/img/bootstrap-mdo-sfmoma-01.jpg" alt="">
