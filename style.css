@@ -30,8 +30,9 @@ body.top-navbar { padding: 8px 0 0; color: #fff; background:#424040 url(img/gz-b
 .container {width:958px;}
 
 .carousel { float: left; overflow: hidden; margin: 20px; }
-.carousel , .item img { width:300px; height:200px;}
-
+.carousel , .carousel .item img { width:300px; height:200px;}
+.widget_gz-banner-slider-widget .plain .item { display: inline-table;}
+.widget_gz-banner-slider-widget .plain .carousel-caption { display:none; }
 .postbox { margin: 0 4px 8px;  padding: 8px;}
 .postbox .page-header {border: none; margin: 0; padding: 0;}
 
