@@ -5,6 +5,6 @@ jQuery(document).ready(function() {
         interval: 2200
     });
   });
-  jQuery(".topsliderbanner .widget_gz-banner-slider-widget:last").css("margin","0");
+  jQuery(".topsliderbanner .widget_gz-banner-slider-widget:odd").css("margin","0 10px");
 
 })
