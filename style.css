@@ -39,6 +39,7 @@ body.top-navbar { padding: 8px 0 0; color: #fff; background:#424040 url(img/gz-b
 .topsliderbanner:before, .topsliderbanner:after {content: ""; display: table; clear: both; }
 .topsliderbanner .widget_gz-banner-slider-widget { width:300px; height:200px; float: left;}
 .topsliderbanner .carousel-inner { }
+.topsliderbanner .widget_gz-banner-slider-widget {float: left; overflow: hidden; margin: 0px;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;}
 .topsliderbanner .carousel { float: left; overflow: hidden; margin: 0px;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px; }
 .topsliderbanner .carousel , .topsliderbanner .carousel .item img { width:300px; height:200px;}
 .topsliderbanner .widget_gz-banner-slider-widget .plain .item { display: inline-table;}
