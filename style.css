@@ -37,14 +37,23 @@ body.top-navbar { padding: 8px 0 0; color: #fff; background:#424040 url(img/gz-b
 
 .topsliderbanner { margin:0 auto 8px;}
 .topsliderbanner:before, .topsliderbanner:after {content: ""; display: table; clear: both; }
-.topsliderbanner .widget_gz-banner-slider-widget { width:300px; height:200px; float: left;}
+.topsliderbanner .widget_gz-banner-slider-widget { width:310px; height:180px; float: left;}
 .topsliderbanner .carousel-inner { }
-.topsliderbanner .widget_gz-banner-slider-widget {float: left; overflow: hidden; margin: 0px;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;}
-.topsliderbanner .carousel { float: left; overflow: hidden; margin: 0px;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px; }
-.topsliderbanner .carousel , .topsliderbanner .carousel .item img { width:300px; height:200px;}
+.topsliderbanner .widget_gz-banner-slider-widget {float: left; overflow: hidden; margin: 0 10px 0 0; 
+  -webkit-border-radius:4px; -moz-border-radius:4px; border-radius:4px;
+}
+
+.topsliderbanner .carousel , .topsliderbanner .carousel .item , .topsliderbanner .carousel .item img { width:310px; height:180px;
+  -webkit-border-radius:4px; -moz-border-radius:4px; border-radius:4px;
+}
 .topsliderbanner .widget_gz-banner-slider-widget .plain .item { display: inline-table;}
 .topsliderbanner .widget_gz-banner-slider-widget .plain .carousel-caption { display:none; }
-
+.topsliderbanner .carousel-caption { margin-left: 18px; width:40%; 
+	-webkit-border-radius:8px 8px 0 0; 
+	-moz-border-radius:8px 8px 0 0; 
+	border-radius:8px 8px 0 0;}
+.topsliderbanner .carousel-caption p {display:none;}
+.topsliderbanner .carousel-control { display:none;}
 /* top logos banner */
 
 .toplogobanner .widget_gz-banner-slider-widget { width:700px; height:32px; float: left; overflow: hidden;}
