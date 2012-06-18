@@ -12,4 +12,7 @@
 <div class="gzline"></div>
 <div class="toplogobanner gzwall">
   <?php dynamic_sidebar('Header logo Sidebar'); ?>
+  <div class="toptoolsbox">
+  	<?php dynamic_sidebar('Top tools Sidebar'); ?>
+  </div>
 </div>
