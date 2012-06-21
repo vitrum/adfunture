@@ -69,20 +69,10 @@ jQuery(document).ready(function() {
   
   
 
-  jQuery(".gz_quick_subscribe_btn").die().live('click', function() {
+  jQuery(".gz_qs_btn").die().live('click', function() {
     var subItem = jQuery("#gz_quick_subscribe input").val()
-    ,	subtType = "subscribe" ;
-    //alert(linkInfo);
-    if (subItem !== ""){
-      postSubscribe(subtType,subItem);
-    }
-    //return false;
-  });
-
-  jQuery(".gz_quick_unsubscribe_btn").die().live('click', function() {
-    var subItem = jQuery("#gz_quick_subscribe input").val()
-    ,	subtType = "unsubscribe" ;
-    //alert(linkInfo);
+    ,	$this = jQuery(this)
+    ,	subtType = $this.attr("data-ref") ;
     if (subItem !== ""){
       postSubscribe(subtType,subItem);
     }
