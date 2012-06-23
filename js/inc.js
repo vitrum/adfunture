@@ -7,7 +7,10 @@ if (!JSONvote) {
 }
 var eventtimes = null
 ,	gz_qs_url = "/wp-content/plugins/gz-quick-subscribe/subscribe-ajax.php?"
-,	emailPattern 	 	= /^\s*[\w-]+(\.[\w-]+)*@([\w-]+\.)+[A-Za-z]{2,7}\s*$/;
+,	emailPattern 	 	= /^\s*[\w-]+(\.[\w-]+)*@([\w-]+\.)+[A-Za-z]{2,7}\s*$/
+,	gz_sub_succeed = "Subscribe succeed!"
+,	gz_sub_succeed_un = "Unsubscribe succeed!"
+,	gz_sub_error = "Please check your e-mail address ad try again. Thank you.";
 
 function postSubscribe(postTpye,postItem) {
 	/*
@@ -16,10 +19,13 @@ function postSubscribe(postTpye,postItem) {
 	type = unsubscribe
 	~/wp-content/plugins/gz-quick-subscribe/subscribe-ajax.php?do=unsubscribe&email=erew@eeq.%20com
 	*/
-	jQuery( '.gz_quick_subscribe_status').html("loading...");
+	jQuery( '.gz_quick_subscribe_status').html("Sending...");
 
 	var postdate = "do=" + postTpye + "&email=" + postItem 
-	, newUrl = gz_qs_url ;
+	,	newUrl = gz_qs_url 
+	,	succeeInfo = gz_sub_succeed;
+
+	if ( postTpye == "unsubscribe" ) { succeeInfo = gz_sub_succeed_un}
 	var request = jQuery.ajax({
 	  type: "GET",
 	  url: newUrl ,
@@ -30,7 +36,13 @@ function postSubscribe(postTpye,postItem) {
 		JSONvote = eval('(' + msg + ')');
 		if ( JSONvote.result == "success") {
 			eventtimes = setTimeout(function(){
-				jQuery( '.gz_quick_subscribe_status').html(JSONvote.result);
+				jQuery( '.gz_quick_subscribe_status').html(succeeInfo);
+				//alert(html);
+			},300);
+		}
+		if ( JSONvote.result == "error" ){
+			eventtimes = setTimeout(function(){
+				jQuery( '.gz_quick_subscribe_status').html(gz_sub_error);
 				//alert(html);
 			},300);
 		}
@@ -52,11 +64,11 @@ jQuery(document).ready(function() {
     ,	$this = jQuery(this)
     ,	subtType = $this.attr("data-ref") ;
     if (subItem =="") { 
-    	jQuery( '.gz_quick_subscribe_status').html("请输入您的邮件地址~");
+    	jQuery( '.gz_quick_subscribe_status').html(gz_sub_error);
     	return ;
  	}
 	if( !emailPattern.test( subItem ) ){ 
-		jQuery( '.gz_quick_subscribe_status').html("邮件地址格式不正确~");
+		jQuery( '.gz_quick_subscribe_status').html(gz_sub_error);
     	return ;
 	}
     if (subItem !== ""){
