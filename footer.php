@@ -3,9 +3,11 @@
 
   <?php roots_footer_before(); ?>
   <footer id="content-info" class="<?php echo WRAP_CLASSES; ?>" role="contentinfo">
-    <?php roots_footer_inside(); ?>
-    <?php dynamic_sidebar('sidebar-footer'); ?>
-    <p class="copy"><small>&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?></small></p>
+    <div class="footerbox gzwall">
+      <?php roots_footer_inside(); ?>
+      <?php dynamic_sidebar('sidebar-footer'); ?>
+      <p class="copy">COPYRIGHT&copy; 2010-<?php echo date('Y'); ?> <?php bloginfo('name'); ?> ALL RIGHTS RESERVED.</p>
+    </div>
   </footer>
   <?php roots_footer_after(); ?>
 
