@@ -17,9 +17,10 @@
   <div class="toptoolsbox">
   	<div class="links">
   	  <ul>
+        <li><?php dynamic_sidebar('Top tools Sidebar'); ?></li>
   	  	<li><a href="/feeds" class="gz_btn gz_btn_black">RSS</a></li>
-  	  	<li><?php dynamic_sidebar('Top tools Sidebar'); ?></li>
   	  </ul>
+      <div class="clearfix"></div>
   	</div>
   	<div class="searchbox">
   		<form action="/" class="form-search " id="searchform" method="get" role="search">
