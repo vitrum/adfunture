@@ -18,7 +18,7 @@
   	<div class="links">
   	  <ul>
         <li><?php dynamic_sidebar('Top tools Sidebar'); ?></li>
-  	  	<li><a href="/feeds" class="gz_btn gz_btn_black">RSS</a></li>
+  	  	<li><a href="/feed/" class="gz_btn gz_btn_black">RSS</a></li>
   	  </ul>
       <div class="clearfix"></div>
   	</div>
