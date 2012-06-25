@@ -7,7 +7,7 @@ Author URI: http://vitrum5.wordpress.com
 Author E-mail: vitrum.cn@gmail.com;
 Version: 1.0.0
 */
-body, div, p {font: 10px "Lucida Grande", "Trebuchet MS", Verdana, sans-serif;}
+body, div, p , label {font: 10px "Lucida Grande", "Trebuchet MS", Verdana, sans-serif;}
 [class*="span"] { margin: 0px 4px;}
 .row-fluid [class*="span"] { margin: 0px}
 body.top-navbar { padding: 8px 0 0; color: #000; background:#424040 url(img/gz-bg.png) top center repeat-x; font-size: 10px; background-attachment: fixed;}
@@ -125,24 +125,44 @@ form  , .row { margin: 0;}
 #silderbar-left .menu li { line-height:10px;}
 #silderbar-left .menu li a { display: block; padding-bottom:18px;}
 /*.modal*/
-#mySubscribe { width:600px; height:320px}
-.modal { background-color:#000; color: #FFF;}
-.modal.fade.in { top:60%;}
+
+#mySubscribe { width:600px; height:320px; background: url(img/gz-pop-bg-2.png) no-repeat;top:60%;color: #FFF;}
 .modal-header { border-bottom:none; padding:20px;}
 .modal-footer { background-color:#000; border-top:none; box-shadow:none; }
-.modal .close { color: #3d3d3d; opacity:0.5; background: #FFF; padding:0 5px 2px;  -webkit-border-radius:4px; -moz-border-radius:4px; border-radius:4px;text-shadow:none;font-size:14px; line-height:16px;}
-.modal-backdrop { background-color:#c3c3c3;}
+#mySubscribe .close { color: #3d3d3d; opacity:0.8; background: #FFF; padding:1px 5px 2px;  -webkit-border-radius:4px; -moz-border-radius:4px; border-radius:4px;text-shadow:none;font-size:14px; line-height:16px;}
+#mySubscribe .modal-backdrop { background-color:#c3c3c3;}
 
 #gz_quick_subscribe label { color:#FFF;}
+#mySubscribe .modal-header { padding:18px 21px 0 30px}
+#mySubscribe .modal-body { padding:8px 30px; }
+#mySubscribe .modal-body .info { line-height:12px; margin:0 0 30px 0;}
+#mySubscribe .modal-body label { margin-bottom:0;}
 
+#mySubscribe .modal-body input {
+	padding:2px 4px;
+	box-shadow:none;
+	background-color:#ccc;
+	-moz-transition:none;
+	border-radius:4px;
+	border:none;
+	font-size:10px;
+	height:14px;
+	line-height:12px;
+	width:200px;
+	color: #000;
+	float:left;
 
-
+}
+#mySubscribe .gz_qs_btn { color: #000;  background: #ccc; padding:2px 4px;  -webkit-border-radius:4px; -moz-border-radius:4px; border-radius:4px;text-shadow:none;font-size:10px; line-height:12px; margin:0 4px;}
+#mySubscribe .gz_quick_subscribe_status { padding-top:60px; clear: both;}
 /* post */
 .postbox h1 { margin-bottom:10px;}
 
 /* footer */
-#content-info { border:none; margin:0 auto; width:950px;}
+#content-info { border:none; margin:0 auto; width:950px; padding-top:0px;}
 #content-info .gzwall { margin:0; opacity:0.8;}
 .footerbox p { height:50px; line-height:50px; text-align:center; color:#fff;}
 
+/* addthis_toolbox */
 
+.addthis_default_style .addthis_separator, .addthis_default_style .at300b, .addthis_default_style .at300bo, .addthis_default_style .at300m, .addthis_default_style .at300bs { float:right;}
