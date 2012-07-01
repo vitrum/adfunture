@@ -62,12 +62,11 @@ form  , .row, .modal-header .close { margin: 0;}
 }
 .topsliderbanner .widget_gz-banner-slider-widget .plain .item { display: inline-table;}
 .topsliderbanner .widget_gz-banner-slider-widget .plain .carousel-caption { display:none; }
-.topsliderbanner .carousel-caption { margin-left: 18px; width:40%; 
-	-webkit-border-radius:8px 8px 0 0; 
-	-moz-border-radius:8px 8px 0 0; 
-	border-radius:8px 8px 0 0;}
-.topsliderbanner .carousel-caption p {display:none;}
-.topsliderbanner .carousel-control { display:none;}
+.topsliderbanner .carousel-caption { margin-left: 18px; width:80%; 
+	-webkit-border-radius:4px 4px 0 0; 
+	-moz-border-radius:4px 4px 0 0; 
+	border-radius:4px 4px 0 0; pointer-events:none;}
+.topsliderbanner .carousel-caption , .topsliderbanner .carousel-caption p , .topsliderbanner .carousel-control { display:none;}
 /* top logos banner */
 .toplogobanner {height:46px;}
 .toplogobanner .toplogosbox { width:580px; height:35px; float: left; overflow: hidden; padding-left:10px;}

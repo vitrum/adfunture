@@ -77,4 +77,27 @@ jQuery(document).ready(function() {
     //return false;
   });
 
+  jQuery(".carousel-inner .item").die().live('hover', function() {
+  	//
+    var $this = $(this)
+    ,	$linkItem = $this.find(".carousel-caption");
+    $linkItem.show();
+  });
+  jQuery(".carousel-inner").die().live('mouseout', function() {
+  	//
+  	var $this = $(this)
+    ,	$linkItem = $this.find(".carousel-caption");
+    $linkItem.hide();
+  });
+
+
 })
+
+
+
+
+
+
+
+
+
