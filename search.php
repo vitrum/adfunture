@@ -3,8 +3,10 @@
     <div id="content" class="<?php echo CONTAINER_CLASSES; ?>">
     <?php roots_main_before(); ?>
       <div id="main" class="<?php echo MAIN_CLASSES; ?>" role="main">
-        <div class="page-header">
-          <h1><?php _e('Search Results for', 'roots'); ?> <?php echo get_search_query(); ?></h1>
+        <div class="postbox gzwall gzwall-white">
+          <div class="page-header">
+            <h1><?php _e('Search Results for', 'roots'); ?> <?php echo get_search_query(); ?></h1>
+          </div>
         </div>
         <?php roots_loop_before(); ?>
         <?php get_template_part('loop', 'search'); ?>

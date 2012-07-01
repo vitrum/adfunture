@@ -18,7 +18,8 @@
   	<div class="links">
   	  <ul>
         <li><?php dynamic_sidebar('Top tools Sidebar'); ?></li>
-  	  	<li><a href="/feed/" class="gz_btn gz_btn_black">RSS</a></li>
+        <li><section class="widget-1 widget-first widget widget_gz-quick-subscribe-widget"><div class="widget-inner"><a href="/feed/" class="gz_btn gz_btn_black">RSS</a><div class="modal hide fade" id="myRss"></div></div></section></li>
+  	  	<!--<li><a href="/feed/" class="gz_btn gz_btn_black">RSS</a></li>-->
   	  </ul>
       <div class="clearfix"></div>
   	</div>

@@ -1,15 +1,18 @@
 <?php /* If there are no posts to display, such as an empty archive page */ ?>
 <?php if (!have_posts()) { ?>
+<div class="postbox gzwall gzwall-white">
   <div class="alert alert-block fade in">
     <a class="close" data-dismiss="alert">&times;</a>
     <p><?php _e('Sorry, no results were found.', 'roots'); ?></p>
   </div>
+</div>
   <?php get_search_form(); ?>
 <?php } ?>
 
 <?php /* Start loop */ ?>
 <?php while (have_posts()) : the_post(); ?>
   <?php roots_post_before(); ?>
+  <div class="postbox gzwall gzwall-white">
     <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
     <?php roots_post_inside_before(); ?>
       <header>
@@ -28,6 +31,7 @@
       </footer>
     <?php roots_post_inside_after(); ?>
     </article>
+  </div>
   <?php roots_post_after(); ?>
 <?php endwhile; /* End loop */ ?>
 

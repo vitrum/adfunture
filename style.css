@@ -7,14 +7,16 @@ Author URI: http://vitrum5.wordpress.com
 Author E-mail: vitrum.cn@gmail.com;
 Version: 1.0.0
 */
-body, div, p , label {font: 10px "Lucida Grande", "Trebuchet MS", Verdana, sans-serif;}
+body, div, p , label , blockquote p {font: 10px "Lucida Grande", "Trebuchet MS", Verdana, sans-serif;}
 [class*="span"] { margin: 0px 4px;}
 .row-fluid [class*="span"] { margin: 0px}
 body.top-navbar { padding: 8px 0 0; color: #000; background:#424040 url(img/gz-bg.png) top center repeat-x; font-size: 10px; background-attachment: fixed;}
 a, a:hover { color: #000; text-decoration:none;}
 ol, ul,li {	list-style: none; margin: 0; line-height:12px;}
 .widget-inner ul { margin: 0;}
-form  , .row { margin: 0;}
+form  , .row, .modal-header .close { margin: 0;}
+.navbar , .postbox h1 { margin:0;}
+
 /* let's clear some floats */
 .clearfix:before, .clearfix:after { content: "\0020"; display: block; height: 0; overflow: hidden; }  
 .clearfix:after { clear: both; }  
@@ -24,9 +26,9 @@ form  , .row { margin: 0;}
 .gzwall , #sidebar .widget { margin:0 0 8px 0; min-height:20px;background-color:#262525;webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;}
 .gzwall:before, .gzwall:after  , #sidebar .widge:after { content: ""; display: table; }
 .gzwall:after, #sidebar .widge:after { clear: both; }
-.gzwall-white { background-color:#FFF; color: #000; border:1px solid #111;}
+.gzwall-white { background-color:#FFF; color: #000; border:none;}
 
-.gzline { margin:0 auto 8px; width:90%; height:2px; line-height:1px;  border: 0; font: 0/0 a; text-shadow: none; color: transparent; background-color: #7a7a7a;}
+.gzline { margin:0 auto 8px; width:90%; height:1px; line-height:1px;  border: 0; font: 0/0 a; text-shadow: none; color: transparent; background-color: #7a7a7a;}
 
 #tophead { width:950px; padding: 0 4px;}
 #main { width:598px;}
@@ -43,7 +45,7 @@ form  , .row { margin: 0;}
 .postbox .page-header {border: none; margin: 0; padding: 0;}
 
 /* topheader  */
-.topheader {}
+.topheader { margin-bottom: 10px}
 
 /* top slider banner*/
 
@@ -75,7 +77,7 @@ form  , .row { margin: 0;}
 
 .toplogobanner .toptoolsbox .links { margin: 6px 0 2px}
 .toplogobanner .toptoolsbox a , .toplogobanner .toptoolsbox a:hover { color: #FFF;  background: #060606; padding:2px 4px;  -webkit-border-radius:4px; -moz-border-radius:4px; border-radius:4px;text-shadow:none;font-size:10px; line-height:12px;}
-.toplogobanner .toptoolsbox li { width:auto; float:right; padding-left: 1px;}
+.toplogobanner .toptoolsbox li { width:auto; float:right; padding-left: 1px; line-height: 12px; }
 
 /* top search */
 .toplogobanner .searchbox { float: right; clear: both; margin: 2px 0;}
@@ -124,12 +126,13 @@ form  , .row { margin: 0;}
 #silderbar-left .menu { padding-top:8px;}
 #silderbar-left .menu li { line-height:10px;}
 #silderbar-left .menu li a { display: block; padding-bottom:18px;}
+#silderbar-left .instagram-images-clear { height:6px;}
 /*.modal*/
 
 #mySubscribe { width:600px; height:320px; background: url(img/gz-pop-bg-2.png) no-repeat;top:60%;color: #FFF;}
 .modal-header { border-bottom:none; padding:20px;}
 .modal-footer { background-color:#000; border-top:none; box-shadow:none; }
-#mySubscribe .close { color: #3d3d3d; opacity:0.8; background: #FFF; padding:1px 5px 2px;  -webkit-border-radius:4px; -moz-border-radius:4px; border-radius:4px;text-shadow:none;font-size:14px; line-height:16px;}
+#mySubscribe .close { color: #3d3d3d; opacity:0.8; background: #FFF; padding:1px 3px 2px;  -webkit-border-radius:4px; -moz-border-radius:4px; border-radius:4px;text-shadow:none;font-size:14px; line-height:16px;}
 #mySubscribe .modal-backdrop { background-color:#c3c3c3;}
 
 #gz_quick_subscribe label { color:#FFF;}
@@ -166,3 +169,10 @@ form  , .row { margin: 0;}
 /* addthis_toolbox */
 
 .addthis_default_style .addthis_separator, .addthis_default_style .at300b, .addthis_default_style .at300bo, .addthis_default_style .at300m, .addthis_default_style .at300bs { float:right;}
+
+
+.addthis_toolbox , .grayimg {
+    filter: url(filters.svg#grayscale); /* Firefox 3.5+ */
+    filter: gray; /* IE6-9 */
+    -webkit-filter: grayscale(1); /* Google Chrome & Safari 6+ */
+}
