@@ -81,13 +81,13 @@ jQuery(document).ready(function() {
   	//
     var $this = $(this)
     ,	$linkItem = $this.find(".carousel-caption");
-    $linkItem.show();
+    $linkItem.fadeIn();
   });
   jQuery(".carousel-inner").die().live('mouseout', function() {
   	//
   	var $this = $(this)
     ,	$linkItem = $this.find(".carousel-caption");
-    $linkItem.hide();
+    $linkItem.fadeOut();
   });
 
 
