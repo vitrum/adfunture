@@ -38,7 +38,7 @@ form  , .row, .modal-header .close { margin: 0;}
 	#silderbar-left .widget {  width:170px; display: block;  margin: 0 4px 8px 0;}
 #silderbar-right { width:180px; overflow: hidden; margin: 0 0 0 0;}
 
-#sidebar .widget-inner { padding:2px 8px;}
+#sidebar .widget-inner { padding:2px 8px 6px;}
 
 .container {width:958px;}
 .postbox { margin: 0 4px 4px;  padding:10px 20px;}
