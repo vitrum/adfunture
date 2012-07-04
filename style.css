@@ -7,7 +7,7 @@ Author URI: http://vitrum5.wordpress.com
 Author E-mail: vitrum.cn@gmail.com;
 Version: 1.0.0
 */
-body, div, p , label , blockquote p {font: 10px "Lucida Grande", "Trebuchet MS", Verdana, sans-serif;}
+body, div, p , label , blockquote p {font: 10px "Lucida Grande", Verdana, Lucida, Arial, Helvetica,"\5B8B\4F53",sans-serif}
 [class*="span"] { margin: 0px 4px;}
 .row-fluid [class*="span"] { margin: 0px}
 body.top-navbar { padding: 8px 0 0; color: #000; background:#d6d6d6 url(img/gz-bg.png) top center repeat-x; font-size: 10px; background-attachment: fixed;}
@@ -72,7 +72,7 @@ form  , .row, .modal-header .close { margin: 0;}
 .toplogobanner .toplogosbox { width:580px; height:35px; float: left; overflow: hidden; padding-left:10px;}
 .toplogobanner .widget_gz-banner-slider-widget .item { float: left;}
 
-.toplogobanner .toptoolsbox {  width:300px; color: #FFF; float:right; padding-right:12px;}
+.toplogobanner .toptoolsbox {  width:300px; color: #FFF; float:right; padding-right:12px;padding-top:3px;}
 
 .toplogobanner .toptoolsbox .links { margin: 5px 0 2px}
 .toplogobanner .toptoolsbox a , .toplogobanner .toptoolsbox a:hover { color: #FFF;  background: #060606; padding:2px 4px;  -webkit-border-radius:4px; -moz-border-radius:4px; border-radius:4px;text-shadow:none;font-size:10px; line-height:12px;}
@@ -128,7 +128,9 @@ form  , .row, .modal-header .close { margin: 0;}
 .instagram-image img {width:170px; height:170px;}
 #silderbar-left .menu { padding-top:8px;}
 #silderbar-left .menu li { line-height:10px;}
-#silderbar-left .menu li a { display: block; padding-bottom:18px;}
+#silderbar-left .menu li a { display: block; padding-bottom:8px;}
+#silderbar-left .menu li li { padding-left: 8px}
+#silderbar-left .menu li li li { padding-left: 12px}
 #silderbar-left .instagram-images-clear { height:6px;}
 /*.modal*/
 
@@ -171,9 +173,9 @@ form  , .row, .modal-header .close { margin: 0;}
 
 .addthis_default_style .addthis_separator, .addthis_default_style .at300b, .addthis_default_style .at300bo, .addthis_default_style .at300m, .addthis_default_style .at300bs { float:right;}
 
-
+/*
 .addthis_toolbox , .grayimg {
-    filter: url(filters.svg#grayscale); /* Firefox 3.5+ */
-    filter: gray; /* IE6-9 */
-    -webkit-filter: grayscale(1); /* Google Chrome & Safari 6+ */
-}
+    filter: url(filters.svg#grayscale); 
+    filter: gray; 
+    -webkit-filter: grayscale(1); 
+}*/
