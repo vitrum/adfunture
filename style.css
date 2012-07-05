@@ -117,7 +117,7 @@ form  , .row, .modal-header .close { margin: 0;}
 .archive .page-header h1 { font-size:14px; padding-left:0; margin-bottom:0; line-height: 16px;}
 /* silderbar-left */
 
-#silderbar-left .widget-inner { height:240px;}
+#silderbar-left .widget-inner { min-height:240px;}
 
 /* instagram-image */
 
