@@ -108,10 +108,10 @@ form  , .row, .modal-header .close { margin: 0;}
 	float: left;
 }
 /* post */
-.postbox h1 { font-size:14px; padding-left:10px; margin-bottom:10px;}
+.postbox h1 { font-size:14px; margin-bottom:10px;}
 
-.postbox time ,.postbox .author { padding-left:10px; }
-.postbox .entry-content { padding-left:10px; width:530px;}
+.postbox time ,.postbox .author {  }
+.postbox .entry-content {  width:530px;}
 
 
 .archive .page-header h1 { font-size:14px; padding-left:0; margin-bottom:0; line-height: 16px;}
@@ -187,3 +187,6 @@ Template Name: instagramoutbox page
 .instagramoutbox #sidebar {width: 170px;}
 .instagramoutbox #silderbar-right { display:none;}
 .instagramoutbox .postbox { margin: 0 10px 4px 4px;}
+/*pager*/
+.pager { width:99%; margin: 18px auto;}
+.pager a { border-radius:4px;

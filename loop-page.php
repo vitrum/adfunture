@@ -14,3 +14,10 @@
     <?php roots_post_inside_after(); ?>
   <?php roots_post_after(); ?>
 <?php endwhile; /* End loop */ ?>
+<?php /* Display navigation to next/previous pages when applicable */ ?>
+<?php if ($wp_query->max_num_pages > 1) { ?>
+  <nav id="post-nav" class="pager">
+    <div class="previous"><?php next_posts_link(__('&larr; Older posts', 'roots')); ?></div>
+    <div class="next"><?php previous_posts_link(__('Newer posts &rarr;', 'roots')); ?></div>
+  </nav>
+<?php } ?>
