@@ -179,3 +179,11 @@ form  , .row, .modal-header .close { margin: 0;}
     filter: gray; 
     -webkit-filter: grayscale(1); 
 }*/
+
+/*
+Template Name: instagramoutbox page
+*/
+.instagramoutbox #main { width:784px;}
+.instagramoutbox #sidebar {width: 170px;}
+.instagramoutbox #silderbar-right { display:none;}
+.instagramoutbox .postbox { margin: 0 10px 4px 4px;}

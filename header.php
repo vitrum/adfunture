@@ -21,7 +21,15 @@
 
   <!-- Stylesheet --> 
   <link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>" type="text/css" />
-  
+  <?php
+    /*$post = $wp_query->post;
+    if (in_category('new')) {
+      echo "<link rel=\"stylesheet\" href=\"";
+      echo get_template_directory_uri(); 
+      echo "/style_new.css\" type=\"text/css\" />\n";
+    } 
+    */
+  ?>
 </head>
 
 <body <?php body_class(); ?>>
