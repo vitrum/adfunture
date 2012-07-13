@@ -204,7 +204,7 @@ Template Name: instagramoutbox page
 
 /**/
 
-/*#main .carousel { display: none;}*/
+.postbox .slide { display: none;}
 #main .fullsilderbox .carousel { display: block;}
 .fullsilderbox { width:930px; height: 320px; overflow: hidden;}
 

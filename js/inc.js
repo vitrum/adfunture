@@ -91,14 +91,18 @@ jQuery(document).ready(function() {
   });
 
 
- // jQuery("#main .carousel").clone(true).appendTo(".fullsilderbox");
-  //jQuery("#main .post").remove();
-  jQuery(".page-template-page-full-php .topsliderbanner").remove();
-  jQuery("#main .carousel").each(function(){
-    jQuery(this).carousel({
-        interval: 2200
+  jQuery(".postbody .slide").clone(true).appendTo(".fullsilderbox");
+  setTimeout(function () {
+    jQuery(".postbody .slide").remove();
+  }, 200); // 
+  
+  setTimeout(function () {
+    jQuery(".fullsilderbox .slide").each(function(){
+      jQuery(this).carousel({
+          interval: 2200
+      });
     });
-  });
+  }, 100); // 
 
 })
 

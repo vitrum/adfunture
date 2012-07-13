@@ -10,7 +10,7 @@
           <?php roots_entry_meta(); ?>
 	      </div>
 
-          <?php the_content(); ?>
+          <div class="postbody"><?php the_content(); ?></div>
   	  </div>
       <?php wp_link_pages(array('before' => '<nav class="pagination">', 'after' => '</nav>')); ?>
     <?php roots_post_inside_after(); ?>
