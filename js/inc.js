@@ -103,7 +103,12 @@ jQuery(document).ready(function() {
       });
     });
   }, 100); // 
-
+  jQuery(".fullsilderbox .slide .right").die().live('click', function() {
+    jQuery(".fullsilderbox .slide").carousel('next');
+  });
+  jQuery(".fullsilderbox .slide .left").die().live('click', function() {
+    jQuery(".fullsilderbox .slide").carousel('prev');
+  });
 })
 
 
