@@ -51,7 +51,7 @@ function postSubscribe(postTpye,postItem) {
 
 jQuery(document).ready(function() {
 
-  jQuery(".carousel").each(function(){
+  jQuery("#tophead .carousel").each(function(){
     jQuery(this).carousel({
         interval: 2200
     });
@@ -90,6 +90,15 @@ jQuery(document).ready(function() {
     $linkItem.fadeOut();
   });
 
+
+ // jQuery("#main .carousel").clone(true).appendTo(".fullsilderbox");
+  //jQuery("#main .post").remove();
+  jQuery(".page-template-page-full-php .topsliderbanner").remove();
+  jQuery("#main .carousel").each(function(){
+    jQuery(this).carousel({
+        interval: 2200
+    });
+  });
 
 })
 

@@ -3,12 +3,17 @@
 Template Name: Full Width
 */
 get_header(); ?>
+
+  <div class="topnavbanner gzwall">
+    <?php dynamic_sidebar('FEATURES Page Nav Sidebar'); ?>
+  </div>
+
   <?php roots_content_before(); ?>
     <div id="content" class="<?php echo CONTAINER_CLASSES; ?>">
     <?php roots_main_before(); ?>
       <div id="main" class="<?php echo FULLWIDTH_CLASSES; ?>" role="main">
         <?php roots_loop_before(); ?>
-        <?php get_template_part('loop', 'page'); ?>
+        <?php get_template_part('loop', 'full'); ?>
         <?php roots_loop_after(); ?>
       </div><!-- /#main -->
     <?php roots_main_after(); ?>

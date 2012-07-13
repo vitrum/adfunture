@@ -49,7 +49,7 @@ form  , .row, .modal-header .close { margin: 0;}
 
 /* top slider banner*/
 
-.topsliderbanner { margin:0 auto 8px;}
+.topsliderbanner { margin:0 auto;}
 .topsliderbanner:before, .topsliderbanner:after {content: ""; display: table; clear: both; }
 .topsliderbanner .widget_gz-banner-slider-widget { width:310px; height:180px; float: left;}
 .topsliderbanner .carousel-inner { }
@@ -67,6 +67,9 @@ form  , .row, .modal-header .close { margin: 0;}
 	-moz-border-radius:4px 4px 0 0; 
 	border-radius:4px 4px 0 0; pointer-events:none;}
 .topsliderbanner .carousel-caption , .topsliderbanner .carousel-caption p , .topsliderbanner .carousel-control { display:none;}
+.topsliderbanner .gzline {margin-top: 8px;}
+
+
 /* top logos banner */
 .toplogobanner {height:46px;}
 .toplogobanner .toplogosbox { width:580px; height:35px; float: left; overflow: hidden; padding-left:10px;}
@@ -182,11 +185,30 @@ form  , .row, .modal-header .close { margin: 0;}
 
 /*
 Template Name: instagramoutbox page
-*/
+
 .instagramoutbox #main { width:784px;}
 .instagramoutbox #sidebar {width: 170px;}
 .instagramoutbox #silderbar-right { display:none;}
 .instagramoutbox .postbox { margin: 0 10px 4px 4px;}
+*/
 /*pager*/
 .pager { width:99%; margin: 18px auto;}
-.pager a { border-radius:4px;
+.pager a { border-radius:4px;}
+
+
+/* topnavbanne r*/
+.topnavbanner { margin: 0 auto 8px; width:930px; height: 16px; padding:10px;}
+
+.page-template-page-full-php #main { width:960px;margin: 0 auto 5px; float: none;}
+.page-template-page-full-php .topsliderbanner { display:none;}
+
+/**/
+
+/*#main .carousel { display: none;}*/
+#main .fullsilderbox .carousel { display: block;}
+.fullsilderbox { width:930px; height: 320px; overflow: hidden;}
+
+.fullsilderbox .carousel , .fullsilderbox .carousel .item , .fullsilderbox .carousel .item img 
+{ width:930px; height: 320px;
+
+}

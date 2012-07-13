@@ -8,8 +8,10 @@
 <div class="gzline"></div>
 <div class="topsliderbanner">
   <?php dynamic_sidebar('Header banner Sidebar'); ?>
+  <div class="clearfix"></div>
+  <div class="gzline"></div>
 </div>
-<div class="gzline"></div>
+
 <div class="toplogobanner gzwall">
   <div class="toplogosbox">
     <?php dynamic_sidebar('Header logo Sidebar'); ?>
