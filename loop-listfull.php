@@ -4,16 +4,15 @@
     <?php roots_post_inside_before(); ?>
       <div class="postbox gzwall gzwall-white">
         <div class="listfull">
-        <?php
-          if($post->post_parent)
-          $children = wp_list_pages("title_li=&child_of=".$post->post_parent."&echo=0");
-          else
-          $children = wp_list_pages("title_li=&child_of=".$post->ID."&echo=0");
-          if ($children) { ?>
-          <ul>
-          <?php echo $children; ?>
-          </ul>
-          <?php } ?>
+          <?php
+          $child_pages = $wpdb->get_results("SELECT *    FROM $wpdb->posts WHERE post_parent = ".$post->ID."    AND post_type = 'page' ORDER BY menu_order", 'OBJECT');    ?>
+          <?php if ( $child_pages ) : foreach ( $child_pages as $pageChild ) : setup_postdata( $pageChild ); ?>
+          <div class="child-thumb">
+            <?php echo get_the_post_thumbnail($pageChild->ID, 'thumbnail'); ?>
+           <a href="<?php echo  get_permalink($pageChild->ID); ?>" rel="bookmark" title="<?php echo $pageChild->post_title; ?>"><?php echo $pageChild->post_title; ?></a>
+          </div>
+          <?php endforeach; endif;
+          ?>
         </div>
   	  </div>
       <?php wp_link_pages(array('before' => '<nav class="pagination">', 'after' => '</nav>')); ?>
