@@ -97,6 +97,7 @@ jQuery(document).ready(function() {
   }, 200); // 
   
   setTimeout(function () {
+    jQuery(".fullsilderbox").show();
     jQuery(".fullsilderbox .slide").each(function(){
       jQuery(this).carousel({
           interval: 2200
@@ -109,6 +110,7 @@ jQuery(document).ready(function() {
   jQuery(".fullsilderbox .slide .left").die().live('click', function() {
     jQuery(".fullsilderbox .slide").carousel('prev');
   });
+
 })
 
 

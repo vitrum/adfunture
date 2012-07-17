@@ -193,7 +193,7 @@ Template Name: instagramoutbox page
 */
 /*pager*/
 .pager { width:99%; margin: 18px auto;}
-.pager a { border-radius:4px;}
+.pager a { border-radius:4px; border:none;}
 
 
 /* topnavbanne r*/
@@ -204,15 +204,24 @@ Template Name: instagramoutbox page
 
 /**/
 
-.postbox .slide { display: none;}
-#main .fullsilderbox .carousel { display: block;}
-.fullsilderbox { width:930px; height: 320px; overflow: hidden;}
+.postbox .slide , .fullsilderbox{ display: none;}
+
+.fullsilderbox .carousel { display: block;}
+.fullsilderbox { width:910px; height: 500px; overflow: hidden; margin:0 auto 20px; }
 
 .fullsilderbox .carousel , .fullsilderbox .carousel .item , .fullsilderbox .carousel .item img 
-{ width:930px; height: 320px;
+{ width:910px; height: 500px;
 
 }
+.fullsilderbox .carousel-control {top:50%;}
 
 /*listfull*/
 
 .listfull .page_item {}
+
+
+.listfull .attachment-thumbnail { width: 350px; height: 235px; display: block; float: left; margin: 0 10px 10px;  }
+.listfull .child-thumb .title , .listfull .child-thumb .content {float: left;width: 500px; padding-left: 20px;}
+.listfull .child-thumb .title { font-size: 140%; font-weight: bold; }
+.listfull .child-thumb { clear:both; position: relative; height: 245px;}
+.listfull .addthis_toolbox { position: absolute; top: 220px; left: 390px;}
