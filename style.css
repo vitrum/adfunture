@@ -198,7 +198,8 @@ Template Name: instagramoutbox page
 
 /* topnavbanne r*/
 .topnavbanner { margin: 0 auto 8px; width:930px; height: 16px; padding:10px;}
-
+.topnavbanner .menu li { width:auto; padding:4px 20px; float: left;  }
+.topnavbanner .menu li a {color: #FFF;}
 .page-template-page-full-php #main , .page-template-page-full-list-php  #main { width:960px;margin: 0 auto 5px; float: none;}
 .page-template-page-full-php .topsliderbanner { display:none;}
 
