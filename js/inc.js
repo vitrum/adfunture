@@ -111,6 +111,19 @@ jQuery(document).ready(function() {
     jQuery(".fullsilderbox .slide").carousel('prev');
   });
 
+  jQuery(".widget_nav_menu a").die().live('hover', function() {
+    var $this = $(this)
+    , $activeMenubox = $this.parents(".menu");
+    $activeMenubox.addClass("menu-on");
+    $this.addClass("active");
+  });
+
+  jQuery(".menu-on").die().live('mouseout', function() {
+    var $this = $(this)
+    , $allLink = $this.find("a");
+    $this.removeClass("menu-on");
+    $allLink.removeClass("active");
+  });
 })
 
 

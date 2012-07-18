@@ -226,3 +226,8 @@ Template Name: instagramoutbox page
 .listfull .child-thumb .title { font-size: 140%; font-weight: bold; }
 .listfull .child-thumb { clear:both; position: relative; height: 245px;}
 .listfull .addthis_toolbox { position: absolute; top: 220px; left: 390px;}
+
+
+/*widget_nav_menu*/
+#sidebar .menu-on a { color:#6b6b6b;}
+#sidebar .menu-on a.active {color:#FFF;}
