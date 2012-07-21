@@ -197,10 +197,10 @@ Template Name: instagramoutbox page
 
 
 /* topnavbanne r*/
-.topnavbanner { margin: 0 auto 8px; width:930px; height: 16px; padding:10px;}
+.topnavbanner { margin: 0 auto 8px; width:920px; height: 16px; padding:3px 10px 3px 20px ;}
 .topnavbanner .menu li { width:auto; padding:4px 20px; float: left;  }
 .topnavbanner .menu li a {color: #FFF;}
-.page-template-page-full-php #main , .page-template-page-full-list-php  #main { width:960px;margin: 0 auto 5px; float: none;}
+.page-template-page-full-php #main , .page-template-page-full-list-php  #main { width:958px;margin: 0 auto 5px; float: none;}
 .page-template-page-full-php .topsliderbanner { display:none;}
 
 /**/
@@ -223,7 +223,7 @@ Template Name: instagramoutbox page
 
 .listfull .attachment-thumbnail { width: 350px; height: 235px; display: block; float: left; margin: 0 10px 10px;  }
 .listfull .child-thumb .title , .listfull .child-thumb .content {float: left;width: 500px; padding-left: 20px;}
-.listfull .child-thumb .title { font-size: 140%; font-weight: bold; }
+.listfull .child-thumb .title { font-size: 140%; font-weight: bold; height:24px; margin-top: 10px }
 .listfull .child-thumb { clear:both; position: relative; height: 245px;}
 .listfull .addthis_toolbox { position: absolute; top: 220px; left: 390px;}
 
