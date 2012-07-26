@@ -214,8 +214,9 @@ Template Name: instagramoutbox page
 { width:910px; height: 500px;
 
 }
-.fullsilderbox .carousel-control {top:50%;}
-
+.fullsilderbox .carousel-control {top:50%; background: url(img/feature-buttom-01.png) no-repeat; text-indent: -9999em; border:none;}
+.fullsilderbox .carousel-control[data-slide=prev] { background-position:-43px -37px }
+.fullsilderbox .carousel-control[data-slide=next] { background-position:-890px -37px }
 /*listfull*/
 
 .listfull .page_item {}
@@ -231,3 +232,6 @@ Template Name: instagramoutbox page
 /*widget_nav_menu*/
 #sidebar .menu-on a { color:#6b6b6b;}
 #sidebar .menu-on a.active {color:#FFF;}
+
+/*respond*/
+#respond {display: none;}
