@@ -117,15 +117,15 @@ jQuery(document).ready(function() {
     , $activeMenubox = $this.parents(".menu")
     , $allLink = $activeMenubox.find("a");
     $activeMenubox.addClass("menu-on");
-    $allLink.stop().fadeTo("slow", 0.5);
+    $allLink.stop().fadeTo(200, 0.5);
     $this.addClass("active");
-    $this.stop().fadeTo("slow", 1);
+    $this.stop().fadeTo(200, 1);
   });
 
   jQuery(".menu-on").die().live('mouseout', function() {
     var $this = $(this)
     , $allLink = $this.find("a");
-    $allLink.stop().fadeTo("slow", 1);
+    $allLink.stop().fadeTo(200, 1);
     $this.removeClass("menu-on");
     $allLink.removeClass("active");
 
