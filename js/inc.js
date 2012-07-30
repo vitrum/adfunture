@@ -102,6 +102,7 @@ jQuery(document).ready(function() {
       jQuery(this).carousel({
           interval: 2200
       });
+      jQuery(this).carousel('pause');
     });
   }, 100); // 
   jQuery(".fullsilderbox .slide .right").die().live('click', function() {
@@ -113,16 +114,21 @@ jQuery(document).ready(function() {
 
   jQuery(".widget_nav_menu a").die().live('hover', function() {
     var $this = $(this)
-    , $activeMenubox = $this.parents(".menu");
+    , $activeMenubox = $this.parents(".menu")
+    , $allLink = $activeMenubox.find("a");
     $activeMenubox.addClass("menu-on");
+    $allLink.stop().fadeTo(200, 0.5);
     $this.addClass("active");
+    $this.stop().fadeTo(200, 1);
   });
 
   jQuery(".menu-on").die().live('mouseout', function() {
     var $this = $(this)
     , $allLink = $this.find("a");
+    $allLink.stop().fadeTo(200, 1);
     $this.removeClass("menu-on");
     $allLink.removeClass("active");
+
   });
 })
 

@@ -8,7 +8,8 @@
           $child_pages = $wpdb->get_results("SELECT *    FROM $wpdb->posts WHERE post_parent = ".$post->ID."    AND post_type = 'page' ORDER BY menu_order", 'OBJECT');    ?>
           <?php if ( $child_pages ) : foreach ( $child_pages as $pageChild ) : setup_postdata( $pageChild ); ?>
           <div class="child-thumb">
-           <a href="<?php echo  get_permalink($pageChild->ID); ?>" rel="bookmark" title="<?php echo $pageChild->post_title; ?>"><?php echo get_the_post_thumbnail($pageChild->ID, 'thumbnail'); ?><span class="title"><?php echo $pageChild->post_title; ?></span><span class="content"><?php the_content(); ?></span></a>
+           <a href="<?php echo  get_permalink($pageChild->ID); ?>" rel="bookmark" title="<?php echo $pageChild->post_title; ?>"><?php echo get_the_post_thumbnail($pageChild->ID, 'thumbnail'); ?><span class="title"><?php echo $pageChild->post_title; ?></span></a>
+          <div class="content"><?php the_content(); ?></div>
           </div>
           <?php endforeach; endif;
           ?>
