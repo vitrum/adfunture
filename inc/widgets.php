@@ -50,6 +50,46 @@ function roots_widgets_init() {
     'before_title' => '<h3>',
     'after_title' => '</h3>',
   ));
+  register_sidebar(array(
+    'name' => __('AD banner A', 'roots'),
+    'id' => 'ad-banner-a',
+    'before_widget' => '<section id="%1$s" class="widget %2$s"><div class="widget-inner">',
+    'after_widget' => '</div></section>',
+    'before_title' => '<h3>',
+    'after_title' => '</h3>',
+  ));
+  register_sidebar(array(
+    'name' => __('AD banner B', 'roots'),
+    'id' => 'ad-banner-b',
+    'before_widget' => '<section id="%1$s" class="widget %2$s"><div class="widget-inner">',
+    'after_widget' => '</div></section>',
+    'before_title' => '<h3>',
+    'after_title' => '</h3>',
+  ));
+  register_sidebar(array(
+    'name' => __('AD banner C', 'roots'),
+    'id' => 'ad-banner-c',
+    'before_widget' => '<section id="%1$s" class="widget %2$s"><div class="widget-inner">',
+    'after_widget' => '</div></section>',
+    'before_title' => '<h3>',
+    'after_title' => '</h3>',
+  ));
+  register_sidebar(array(
+    'name' => __('AD banner D', 'roots'),
+    'id' => 'ad-banner-d',
+    'before_widget' => '<section id="%1$s" class="widget %2$s"><div class="widget-inner">',
+    'after_widget' => '</div></section>',
+    'before_title' => '<h3>',
+    'after_title' => '</h3>',
+  ));
+  register_sidebar(array(
+    'name' => __('AD banner E', 'roots'),
+    'id' => 'ad-banner-e',
+    'before_widget' => '<section id="%1$s" class="widget %2$s"><div class="widget-inner">',
+    'after_widget' => '</div></section>',
+    'before_title' => '<h3>',
+    'after_title' => '</h3>',
+  ));
  /*
   register_sidebar(array(
     'name' => __('Right Sidebar2', 'roots'),
