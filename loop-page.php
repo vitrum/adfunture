@@ -4,13 +4,20 @@
     <?php roots_post_inside_before(); ?>
       <div class="postbox gzwall gzwall-white">
 
-        <div class="listfull">
+        <div class="list">
 
           <div class="child-thumb">
-<a href="<?php the_permalink() ?>" rel="bookmark"><?php the_post_thumbnail('featured-thumbnail'); ?></a>
-<div class="content"><?php the_content(); ?></div>
 
-
+<?php 
+ if ( has_post_thumbnail()) {
+   $large_image_url = wp_get_attachment_image_src( get_post_thumbnail_id(), 'full');
+   echo '<a href="' . $large_image_url[0] . '" title="' . the_title_attribute('echo=0') . '" >';
+   the_post_thumbnail('thumbnail');
+   echo '</a>';
+ }
+ ?>
+<?php the_title(); ?>
+<div class="content"><?php the_excerpt(); ?></div>
 
           </div>
 
