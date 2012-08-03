@@ -34,9 +34,10 @@ form  , .row, .modal-header .close { margin: 0;}
 #main { width:600px;}
 #sidebar { width:358px; color: #FFF;}
 #sidebar a { color: #FFF;} 
-#silderbar-left { width:170px; margin: 0 4px 0 0; }
-	#silderbar-left .widget {  width:170px; display: block;  margin: 0 4px 8px 0;}
-#silderbar-right { width:180px; overflow: hidden; margin: 0 0 0 0;}
+#silderbar-left { width:354px; margin: 0 4px 0 0; }
+	#silderbar-left .widget {  width:354px; display: block;  margin: 0 4px 8px 0;}
+
+/*#silderbar-right { width:180px; overflow: hidden; margin: 0 0 0 0;}*/
 
 #sidebar .widget-inner { padding:2px 8px 6px;}
 

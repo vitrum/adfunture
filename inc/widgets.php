@@ -50,6 +50,7 @@ function roots_widgets_init() {
     'before_title' => '<h3>',
     'after_title' => '</h3>',
   ));
+ /*
   register_sidebar(array(
     'name' => __('Right Sidebar2', 'roots'),
     'id' => 'right-sidebar-2',
@@ -58,7 +59,7 @@ function roots_widgets_init() {
     'before_title' => '<h3>',
     'after_title' => '</h3>',
   ));
-
+*/
   register_sidebar(array(
     'name' => __('Footer', 'roots'),
     'id' => 'sidebar-footer',

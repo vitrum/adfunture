@@ -3,12 +3,19 @@
   <?php roots_post_before(); ?>
     <?php roots_post_inside_before(); ?>
       <div class="postbox gzwall gzwall-white">
-	      <div class="page-header">
-	      	<h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
-          <?php roots_entry_meta(); ?>
-	      </div>
 
-          <?php the_content(); ?>
+        <div class="listfull">
+
+          <div class="child-thumb">
+<a href="<?php the_permalink() ?>" rel="bookmark"><?php the_post_thumbnail('featured-thumbnail'); ?></a>
+<div class="content"><?php the_content(); ?></div>
+
+
+
+          </div>
+
+        </div>
+
   	  </div>
       <?php wp_link_pages(array('before' => '<nav class="pagination">', 'after' => '</nav>')); ?>
     <?php roots_post_inside_after(); ?>
