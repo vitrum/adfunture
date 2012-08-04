@@ -255,4 +255,14 @@ Template Name: instagramoutbox page
 .sglist .addthis_toolbox { position: absolute; top: 132px; left: 470px; width:110px;}
 
 /*ad banner*/
-.ad_banner_b { clear: both;}
+#silderbar-left .ad_banner .widget { width:auto;}
+.ad_banner_a {padding: 0 10px;}
+.ad_banner_b { clear: both; width: 145px; float: left; padding: 0 10px}
+  .ad_banner_b .item { padding-bottom: 7px;}
+  
+.ad_banner_c { width: 145px; float: left;}
+.ad_banner_d { clear: both; padding: 0 10px}
+.ad_banner_e { clear: both; padding: 0 0 0 10px}
+  .ad_banner_e .item { padding:0 10px 10px 0; float: left;}
+  .ad_banner_e:after { clear: both; }
+ #silderbar-left .ad_banner_b .widget ,  #silderbar-left .ad_banner_e .widget { margin-bottom: 0;}

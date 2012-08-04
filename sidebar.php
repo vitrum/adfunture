@@ -14,7 +14,7 @@
 	  <div class="ad_banner ad_banner_d">
 	  	<?php dynamic_sidebar('AD banner D'); ?>
 	  </div>
-	  <div class="ad_banner ad_banner_d">
+	  <div class="ad_banner ad_banner_e">
 	  	<?php dynamic_sidebar('AD banner E'); ?>
 	  </div>
 	</div>
