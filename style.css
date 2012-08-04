@@ -248,6 +248,7 @@ Template Name: instagramoutbox page
 /*sglist*/
 .sglist { height: 147px; position: relative;}
 .sglist .child-thumb { width:230px; float: left;}
+  .sglist .child-thumb image { width: 220px; height: 147px;}
 .sglist .content { width: 350px; float: left;}
 .sglist .content time {display: block; margin-bottom: 10px}
 .sglist .content .author {display: none;}
@@ -256,13 +257,17 @@ Template Name: instagramoutbox page
 
 /*ad banner*/
 #silderbar-left .ad_banner .widget { width:auto;}
-.ad_banner_a {padding: 0 10px;}
+.ad_banner_a { padding: 0 10px;}
+  .ad_banner_a image { width: 300px; height: 250px}
 .ad_banner_b { clear: both; width: 145px; float: left; padding: 0 10px}
   .ad_banner_b .item { padding-bottom: 7px;}
-  
+  .ad_banner_b image { width: 145px; height: 145px}
 .ad_banner_c { width: 145px; float: left;}
+  .ad_banner_d image { width: 145px; height: 600px}
 .ad_banner_d { clear: both; padding: 0 10px}
+  .ad_banner_d image { width: 300px; height: 150px}
 .ad_banner_e { clear: both; padding: 0 0 0 10px}
   .ad_banner_e .item { padding:0 10px 10px 0; float: left;}
+  .ad_banner_e image { width: 145px; height: 145px}
   .ad_banner_e:after { clear: both; }
  #silderbar-left .ad_banner_b .widget ,  #silderbar-left .ad_banner_e .widget { margin-bottom: 0;}
