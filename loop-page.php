@@ -3,26 +3,23 @@
   <?php roots_post_before(); ?>
     <?php roots_post_inside_before(); ?>
       <div class="postbox gzwall gzwall-white">
-
-        <div class="list">
-
+        <div class="sglist">
           <div class="child-thumb">
-
-<?php 
- if ( has_post_thumbnail()) {
-   $large_image_url = wp_get_attachment_image_src( get_post_thumbnail_id(), 'full');
-   echo '<a href="' . $large_image_url[0] . '" title="' . the_title_attribute('echo=0') . '" >';
-   the_post_thumbnail('thumbnail');
-   echo '</a>';
- }
- ?>
-<?php the_title(); ?>
-<div class="content"><?php the_excerpt(); ?></div>
-
+            <?php 
+             if ( has_post_thumbnail()) {
+               $large_image_url = wp_get_attachment_image_src( get_post_thumbnail_id(), 'full');
+               echo '<a class="img" href="' . $large_image_url[0] . '" title="' . the_title_attribute('echo=0') . '" >';
+               the_post_thumbnail('thumbnail');
+               echo '</a>';
+             }
+            ?>
           </div>
-
+          <div class="content">
+            <a class="link" href="<?php the_permalink();?>"><?php the_title(); ?></a>
+            <?php roots_entry_meta(); ?>
+            <?php the_excerpt(); ?>
+          </div>
         </div>
-
   	  </div>
       <?php wp_link_pages(array('before' => '<nav class="pagination">', 'after' => '</nav>')); ?>
     <?php roots_post_inside_after(); ?>

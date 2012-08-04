@@ -31,11 +31,11 @@ form  , .row, .modal-header .close { margin: 0;}
 .gzline { margin:0 auto 8px; width:90%; height:1px; line-height:1px;  border: 0; font: 0/0 a; text-shadow: none; color: transparent; background-color: #7a7a7a;}
 
 #tophead { width:950px; padding: 0 4px;}
-#main { width:600px;}
-#sidebar { width:358px; color: #FFF;}
+#main { width:634px;}
+#sidebar { width:320px; color: #FFF;}
 #sidebar a { color: #FFF;} 
-#silderbar-left { width:354px;  margin:0 0 8px 0; min-height:20px;background-color:#262525;webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;}
-	#silderbar-left .widget {  width:354px; display: block;  margin: 0 4px 8px 0; background: none; }
+#silderbar-left { width:320px; margin:0 0 8px 0; min-height:20px;background-color:#262525;webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;}
+	#silderbar-left .widget {  width:300px; display: block;  margin: 10px auto; background: none; }
 
 /*#silderbar-right { width:180px; overflow: hidden; margin: 0 0 0 0;}*/
 
@@ -121,7 +121,7 @@ form  , .row, .modal-header .close { margin: 0;}
 .archive .page-header h1 { font-size:14px; padding-left:0; margin-bottom:0; line-height: 16px;}
 /* silderbar-left */
 
-#silderbar-left .widget-inner { min-height:240px;}
+#silderbar-left .widget-inner { min-height:20px; padding:0;}
 
 /* instagram-image */
 
@@ -136,6 +136,9 @@ form  , .row, .modal-header .close { margin: 0;}
 #silderbar-left .menu li li { padding-left: 8px}
 #silderbar-left .menu li li li { padding-left: 12px}
 #silderbar-left .instagram-images-clear { height:6px;}
+
+#silderbar-left .widget_nav_menu { width: 140px; float: left; padding-left: 16px;}
+
 /*.modal*/
 
 #mySubscribe { width:600px; height:320px; background: #000 url(img/gz-pop-bg-2.png) no-repeat;top:60%;color: #FFF;}
@@ -242,3 +245,14 @@ Template Name: instagramoutbox page
 /*#sidebar .menu-on a { color:#6b6b6b;}
 #sidebar .menu-on a.active {color:#FFF;}*/
 
+/*sglist*/
+.sglist { height: 147px; position: relative;}
+.sglist .child-thumb { width:230px; float: left;}
+.sglist .content { width: 350px; float: left;}
+.sglist .content time {display: block; margin-bottom: 10px}
+.sglist .content .author {display: none;}
+.sglist .content .link { font-size: 120%; font-weight: bold;}
+.sglist .addthis_toolbox { position: absolute; top: 132px; left: 470px; width:110px;}
+
+/*ad banner*/
+.ad_banner_b { clear: both;}
