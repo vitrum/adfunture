@@ -34,8 +34,8 @@ form  , .row, .modal-header .close { margin: 0;}
 #main { width:600px;}
 #sidebar { width:358px; color: #FFF;}
 #sidebar a { color: #FFF;} 
-#silderbar-left { width:354px; margin: 0 4px 0 0; }
-	#silderbar-left .widget {  width:354px; display: block;  margin: 0 4px 8px 0;}
+#silderbar-left { width:354px;  margin:0 0 8px 0; min-height:20px;background-color:#262525;webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;}
+	#silderbar-left .widget {  width:354px; display: block;  margin: 0 4px 8px 0; background: none; }
 
 /*#silderbar-right { width:180px; overflow: hidden; margin: 0 0 0 0;}*/
 
@@ -232,13 +232,13 @@ Template Name: instagramoutbox page
 
 
 /*widget_nav_menu*/
-<<<<<<< HEAD
+
 #sidebar .menu-on a { color:#6b6b6b;}
 #sidebar .menu-on a.active {color:#FFF;}
 
 /*respond*/
 #respond {display: none;}
-=======
+
 /*#sidebar .menu-on a { color:#6b6b6b;}
 #sidebar .menu-on a.active {color:#FFF;}*/
 
