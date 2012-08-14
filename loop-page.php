@@ -17,7 +17,7 @@
           <div class="content">
             <a class="link" href="<?php the_permalink();?>"><?php the_title(); ?></a>
             <?php roots_entry_meta(); ?>
-            <?php the_excerpt(); ?>
+            <div class="sglistcontent"><?php the_excerpt(); ?></div>
           </div>
         </div>
   	  </div>

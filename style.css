@@ -271,3 +271,6 @@ Template Name: instagramoutbox page
   .ad_banner_e image { width: 145px; height: 145px}
   .ad_banner_e:after { clear: both; }
  #silderbar-left .ad_banner_b .widget ,  #silderbar-left .ad_banner_e .widget { margin-bottom: 0;}
+
+
+ .sglistcontent p { max-height: 52px; width: 100%; position: relative; overflow: hidden;}
