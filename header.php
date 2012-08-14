@@ -19,6 +19,9 @@
   <?php roots_head(); ?>
   <?php wp_head(); ?>
 
+  <link rel="icon" href="<?php echo get_template_directory_uri(); ?>/favicon.ico" type="image/x-icon" />
+  <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/favicon.ico" type="image/x-icon" />
+
   <!-- Stylesheet --> 
   <link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>" type="text/css" />
   <?php
